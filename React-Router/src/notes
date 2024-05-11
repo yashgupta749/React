@@ -1,0 +1,13 @@
+const [datafetched, setdata] = useState(false);
+
+if (!datafetched) {
+  fetch("https://dummyjson.com/posts")
+    .then((res) => res.json())
+    .then((data) => addInitialPost(data.posts));
+  setdata(true);
+}
+
+// useEffect(function,dependencies) ye finction tbhi call hga hi usi dependencies ke according ye call krega apne function ko agar wo usse link krega then
+
+ React router basically ham isliye use krte hai kyuki jo reaxt hai wo eh hi host id pr chlta hai use address se koi frk nhi padhta hai ki kya diya hai so simply hame 2page me kholna hai so ham router ka use krte hai 
+ simply path kesa bhi ho wo single page pr work krti hai simply 

@@ -1,0 +1,16 @@
+redux basicalay app wide state ko maanag krne ke liye use kiya jata hai bascially ek common jgh pr statte declaare krke sb jgh use krna
+redux me ej hi central store hota hai
+
+react context ki performance slow hoti hai
+
+working of redux some commands
+
+1.  npm init -y
+2.  npm install redux
+3.  import in code const redux=reuire('redux);
+4.  we need too setup all 4 basic things:
+    a. reducer
+    b. store
+    c. subscriber
+    d. Actions
+5.  Node FILE NAME command to run node server

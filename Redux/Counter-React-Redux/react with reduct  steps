@@ -1,0 +1,13 @@
+steps to follow react with redux
+
+1. npm install redux
+2. npm install react-redux
+3. create store folder with index.js file
+4. creating the store using
+   Import{createStore} from redux
+
+5. Providing the store with react (this woll do in main.jsx file)
+   a. Provider from react-redux
+   b. <Provider store={store}></App> </Provider>
+
+6. Using the Store

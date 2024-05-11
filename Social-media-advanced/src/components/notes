@@ -1,0 +1,10 @@
+const [datafetched, setdata] = useState(false);
+
+if (!datafetched) {
+  fetch("https://dummyjson.com/posts")
+    .then((res) => res.json())
+    .then((data) => addInitialPost(data.posts));
+  setdata(true);
+}
+
+// useEffect(function,dependencies) ye finction tbhi call hga hi usi dependencies ke according ye call krega apne function ko agar wo usse link krega then
